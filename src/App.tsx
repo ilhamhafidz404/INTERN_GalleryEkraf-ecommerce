@@ -102,7 +102,7 @@ export default function App() {
       />
 
       <main className="md:px-10 px-3 my-20">
-        <div className="mb-10 flex items-center justify-between">
+        <div className="mb-10 flex md:flex-row flex-col md:items-center items-start justify-between">
           <div>
             <h2 className="text-3xl font-semibold">Produk</h2>
             <p className="text-gray-700">
@@ -110,7 +110,7 @@ export default function App() {
               tempora explicabo cupiditate rem animi solut
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 md:mt-0 mt-5">
             <span onClick={() => setShowCustomModal(true)}>
               <Button
                 text="Filter"
