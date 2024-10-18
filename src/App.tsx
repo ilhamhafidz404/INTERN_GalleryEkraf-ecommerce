@@ -1,6 +1,9 @@
 // import { Route, Routes } from "react-router-dom";
 import Navbar from "alope-ui/Navbar";
 import Header from "alope-ui/Header";
+import Footer from "alope-ui/Footer";
+import Card from "alope-ui/Card";
+import { Button } from "alope-ui/Button";
 
 // views
 
@@ -52,6 +55,110 @@ export default function App() {
             buttonColor: "light",
             placeholder: "Lihat Produk",
             to: "/",
+          },
+        ]}
+      />
+
+      <main className="px-10 my-20">
+        <div className="mb-10">
+          <h2 className="text-3xl font-semibold">Produk</h2>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            tempora explicabo cupiditate rem animi solut
+          </p>
+        </div>
+        <section className="grid grid-cols-4 gap-5">
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+          <Card
+            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Sepatu Bagus banget"
+            subtitle="Rp 20.000"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        laboriosam."
+            button={<Button text={"Detail"} color="primary" fullWidth />}
+            ribbon="Fesyen"
+          />
+        </section>
+      </main>
+
+      <Footer
+        imgUrlLogo="https://kuninganbeu.kuningankab.go.id/images/logo/KuninganBeu_Putih.png"
+        text="Connect, Collaboration, Commerce"
+        bottomText="Copyright by Ekraf Kuningan, since &copy; 2024"
+        links={[
+          {
+            to: "",
+            placeholder: <i className="fa-brands fa-instagram text-xl"></i>,
+          },
+          {
+            to: "",
+            placeholder: <i className="fa-brands fa-tiktok text-xl"></i>,
+          },
+          {
+            to: "",
+            placeholder: <i className="fa-brands fa-youtube text-xl"></i>,
           },
         ]}
       />
