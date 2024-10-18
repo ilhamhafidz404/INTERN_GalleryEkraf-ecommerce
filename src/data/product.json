@@ -4,118 +4,135 @@
     "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Kuliner"
+    "category": "kuliner",
+    "ribbon": "Kuliner"
   },
   {
     "title": "StreetWear",
     "image": "https://plus.unsplash.com/premium_photo-1708110920881-635419c3411f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Fesyen"
+    "category": "fashion",
+    "ribbon": "Fesyen"
   },
   {
     "title": "Gucci",
     "image": "https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Kriya"
+    "category": "kriya",
+    "ribbon": "Kriya"
   },
   {
     "title": "Harry Potter",
     "image": "https://images.unsplash.com/photo-1599518333229-8d0681f62323?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "TV & Radio"
+    "category": "radio-tv",
+    "ribbon": "TV & Radio"
   },
   {
     "title": "Buku",
     "image": "https://images.unsplash.com/photo-1470549638415-0a0755be0619?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Penerbitan"
+    "category": "penerbitan",
+    "ribbon": "Penerbitan"
   },
   {
     "title": "Gedung",
     "image": "https://plus.unsplash.com/premium_photo-1681550097108-187abe10d445?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Arsitektur"
+    "category": "arsitektur",
+    "ribbon": "Arsitektur"
   },
   {
     "title": "Iklan",
     "image": "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Periklan"
+    "category": "periklan",
+    "ribbon": "Periklan"
   },
   {
     "title": "Pop",
     "image": "https://plus.unsplash.com/premium_photo-1683121128953-9a7f08b82198?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Musik"
+    "category": "musik",
+    "ribbon": "Musik"
   },
   {
-    "title": "Estetika",
+    "title": "estetika",
     "image": "https://images.unsplash.com/photo-1679340590086-2e2c91bc8cde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Fotografi"
+    "category": "Fotografi",
+    "ribbon": "Fotografi"
   },
   {
-    "title": "Teater",
+    "title": "teater",
     "image": "https://images.unsplash.com/photo-1605034949929-6af5f19593b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Seni Pertujukan"
+    "category": "Seni Pertujukan",
+    "ribbon": "Seni Pertujukan"
   },
   {
     "title": "Desain Tas",
     "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Desain Produk"
+    "category": "Desain Produk",
+    "ribbon": "product-design"
   },
   {
     "title": "Lukisan",
     "image": "https://images.unsplash.com/photo-1577083552792-a0d461cb1dd6?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Seni Rupa"
+    "category": "Seni Rupa",
+    "ribbon": "Seni Rupa"
   },
   {
     "title": "Kamar Tidur",
     "image": "https://images.unsplash.com/photo-1460533893735-45cea2212645?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Desain Interior"
+    "category": "Desain Interior",
+    "ribbon": "Desain Interior"
   },
   {
     "title": "Kartun",
     "image": "https://images.unsplash.com/photo-1631582053308-40f482e7ace5?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Film, Animasi dan Video"
+    "category": "Film, Animasi dan Video",
+    "ribbon": "Film, Animasi dan Video"
   },
   {
     "title": "Nirmana",
     "image": "https://cdn.idntimes.com/content-images/post/20230315/nirmana1-e1637812423436-02f9abd64717a77b4d47e0c7bf13be90_600x400.jpg",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "DKV"
+    "category": "DKV",
+    "ribbon": "DKV"
   },
   {
     "title": "Amazon",
     "image": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Aplikasi"
+    "category": "Aplikasi",
+    "ribbon": "Aplikasi"
   },
   {
     "title": "Dadu",
     "image": "https://images.unsplash.com/photo-1522069213448-443a614da9b6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "harga": 20000,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam.",
-    "category": "Game"
+    "category": "Game",
+    "ribbon": "Game"
   }
 ]
