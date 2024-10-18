@@ -5,6 +5,8 @@ import Footer from "alope-ui/Footer";
 import Card from "alope-ui/Card";
 import { Button } from "alope-ui/Button";
 
+import products from "./data/product.json";
+
 // views
 
 export default function App() {
@@ -68,78 +70,21 @@ export default function App() {
           </p>
         </div>
         <section className="grid grid-cols-4 gap-5">
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
-          <Card
-            image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            title="Sepatu Bagus banget"
-            subtitle="Rp 20.000"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        laboriosam."
-            button={<Button text={"Detail"} color="primary" fullWidth />}
-            ribbon="Fesyen"
-          />
+          {products.map((product) => (
+            <Card
+              image={product.image}
+              title={product.title}
+              subtitle={product.harga.toLocaleString("id-ID", {
+                style: "currency",
+                currency: "IDR",
+                minimumFractionDigits: 0,
+              })}
+              description={product.description}
+              button={<Button text={"Detail"} color="primary" fullWidth />}
+              ribbon={product.category}
+              forceSameHeight
+            />
+          ))}
         </section>
       </main>
 
