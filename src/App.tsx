@@ -61,7 +61,7 @@ export default function App() {
         ]}
       />
 
-      <main className="px-10 my-20">
+      <main className="md:px-10 px-3 my-20">
         <div className="mb-10">
           <h2 className="text-3xl font-semibold">Produk</h2>
           <p className="text-gray-700">
@@ -69,7 +69,7 @@ export default function App() {
             tempora explicabo cupiditate rem animi solut
           </p>
         </div>
-        <section className="grid grid-cols-4 gap-5">
+        <section className="grid md:grid-cols-4 grid-cols-1 md:gap-5 gap-2">
           {products.map((product) => (
             <Card
               image={product.image}
