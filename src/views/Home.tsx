@@ -1,10 +1,10 @@
 import React from "react";
+
+import Slider from "react-slick";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import { Route, Routes } from "react-router-dom";
-import Navbar from "alope-ui/Navbar";
 import Header from "alope-ui/Header";
-import Footer from "alope-ui/Footer";
 import Card from "alope-ui/Card";
 import Select from "alope-ui/Select";
 import { Button } from "alope-ui/Button";
@@ -52,36 +52,44 @@ export default function Home() {
     : products.filter((product) => product.category === getSubsektorFromUrl());
 
   const [totalSubsectorRendered, setTotalSubsectorRendered] = useState(8);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
-      <Navbar
-        logo={
-          <img
-            src="https://kuninganbeu.kuningankab.go.id/images/logo/KuninganBeu_Putih.png"
-            className="w-[50px]"
-          />
-        }
-        title={"EKRAF KUNINGAN"}
-        links={[
-          {
-            placeholder: "Home",
-            to: "/",
-          },
-          {
-            placeholder: "About",
-            to: "/about",
-          },
-          {
-            placeholder: "Product",
-            to: "/product",
-          },
-        ]}
-        stickyTop={true}
-        backDropBlur
-        withSearchBar
-        changeTextColorAfterScroll={500}
-        // searchItems={products.slice(0, 3).map((product) =>  )}
-      />
       <Header
         title="Connect, Collaboration, Commerce"
         bgUrls={[
@@ -114,7 +122,7 @@ export default function Home() {
               tempora explicabo cupiditate rem animi solut
             </p>
           </div>
-          <div className="md:px-10 px-3 py-10 grid grid-cols-4 gap-5 bg-[url(https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png)] mt-10">
+          <div className="md:px-10 px-3 py-10 grid md:grid-cols-4 grid-cols-1 gap-5 mt-10">
             {subsectors.slice(0, totalSubsectorRendered).map((subsector) => (
               <Card
                 title={subsector.name}
@@ -135,7 +143,7 @@ export default function Home() {
               />
             ))}
 
-            <div className="col-span-4">
+            <div className="md:col-span-4">
               {totalSubsectorRendered == 8 ? (
                 <span onClick={() => setTotalSubsectorRendered(17)}>
                   <Button
@@ -158,7 +166,7 @@ export default function Home() {
         </section>
 
         <section className="md:px-10 px-3 mb-10">
-          <div className="flex md:flex-row flex-col md:items-center items-start justify-between mt-20">
+          <div className="flex md:flex-row flex-col md:items-center items-start justify-between mt-20 mb-10">
             <div>
               <h2 className="text-3xl font-semibold">Produk</h2>
               <p className="text-gray-700">
@@ -231,7 +239,14 @@ export default function Home() {
                     minimumFractionDigits: 0,
                   })}
                   description={product.description}
-                  button={<Button text={"Detail"} color="primary" fullWidth />}
+                  button={
+                    <Button
+                      text={"Detail"}
+                      color="primary"
+                      fullWidth
+                      to="detail"
+                    />
+                  }
                   ribbon={product.category}
                   forceSameHeight
                 />
@@ -248,62 +263,100 @@ export default function Home() {
               tempora explicabo cupiditate rem animi solut
             </p>
           </div>
-          <div className="md:px-10 px-3 py-10 grid grid-cols-5 gap-5 bg-[url(https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png)] mt-10">
-            <Card
-              image={
-                "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
-              title={"Ilham Store"}
-              subtitle={"Kriya"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-              }
-              forceSameHeight
-            />
-            <Card
-              image={
-                "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
-              title={"Ilham Store"}
-              subtitle={"Kriya"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-              }
-              forceSameHeight
-            />
-            <Card
-              image={
-                "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
-              title={"Ilham Store"}
-              subtitle={"Kriya"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-              }
-              forceSameHeight
-            />
-            <Card
-              image={
-                "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
-              title={"Ilham Store"}
-              subtitle={"Kriya"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-              }
-              forceSameHeight
-            />
-            <Card
-              image={
-                "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              }
-              title={"Ilham Store"}
-              subtitle={"Kriya"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-              }
-              forceSameHeight
-            />
+          <div className="md:px-10 px-3 py-10 mt-10">
+            <Slider {...settings}>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+              <div className="px-3">
+                <Card
+                  image={
+                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  }
+                  title={"Ilham Store"}
+                  subtitle={"Kriya"}
+                  description={
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
+                  }
+                  forceSameHeight
+                />
+              </div>
+            </Slider>
           </div>
         </section>
       </main>
@@ -391,26 +444,6 @@ export default function Home() {
             </div>
           </form>
         }
-      />
-
-      <Footer
-        imgUrlLogo="https://kuninganbeu.kuningankab.go.id/images/logo/KuninganBeu_Putih.png"
-        text="Connect, Collaboration, Commerce"
-        bottomText="Copyright by Ekraf Kuningan, since &copy; 2024"
-        links={[
-          {
-            to: "",
-            placeholder: <i className="fa-brands fa-instagram text-xl"></i>,
-          },
-          {
-            to: "",
-            placeholder: <i className="fa-brands fa-tiktok text-xl"></i>,
-          },
-          {
-            to: "",
-            placeholder: <i className="fa-brands fa-youtube text-xl"></i>,
-          },
-        ]}
       />
     </>
   );
