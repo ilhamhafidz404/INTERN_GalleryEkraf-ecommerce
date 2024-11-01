@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "alope-ui/Card";
+import { Button } from "alope-ui/Button";
 
 export default function DetailProduct() {
   return (
@@ -20,12 +22,12 @@ export default function DetailProduct() {
           <div className="lg:w-1/2">
             <img
               alt="Light Gray Top for Women"
-              className="w-full mb-4"
+              className="md:px-10 px-3"
               height="600"
               src="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
               width="600"
             />
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 md:px-10 px-3">
               <img
                 alt="Product thumbnail 1"
                 className="w-20 h-20"
@@ -70,23 +72,16 @@ export default function DetailProduct() {
             <div className="mb-4">
               <span className="text-sm text-gray-500"> SELECT SIZE </span>
               <div className="flex space-x-2 mt-2">
-                <button className="border border-gray-300 px-4 py-2">S</button>
-                <button className="border border-gray-300 px-4 py-2">M</button>
-                <button className="border border-gray-300 px-4 py-2">L</button>
-                <button className="border border-gray-300 px-4 py-2">XL</button>
-                <button className="border border-gray-300 px-4 py-2">
-                  XXL
-                </button>
+                <Button text="S" color="primary" gradient />
+                <Button text="M" color="primary" gradient />
+                <Button text="L" color="primary" gradient />
+                <Button text="XL" color="primary" gradient />
+                <Button text="XXL" color="primary" gradient />
               </div>
             </div>
             <div className="flex space-x-4 mb-4">
-              <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded">
-                <i className="fas fa-heart"> </i>
-                WISHLIST
-              </button>
-              <button className="bg-green-600 text-white px-4 py-2 rounded">
-                ADD TO CART
-              </button>
+              <Button text="Wishlist" color="secondary" />
+              <Button text="Beli Produk" color="success" />
             </div>
             <div className="mb-4">
               <h3 className="text-sm text-gray-500 uppercase mb-2">
@@ -113,53 +108,37 @@ export default function DetailProduct() {
         </div>
         <div className="mt-8">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
-            Similar Products
+            Produk Serupa
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white p-4 shadow-md">
-              <img
-                alt="Navy Blue Dots Basic Top"
-                className="w-full mb-2"
-                height="300"
-                src="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
-                width="300"
-              />
-              <h3 className="text-gray-700">Navy Blue Dots Basic Top</h3>
-              <p className="text-green-600">$39</p>
-            </div>
-            <div className="bg-white p-4 shadow-md">
-              <img
-                alt="Minimal Black Top"
-                className="w-full mb-2"
-                height="300"
-                src="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
-                width="300"
-              />
-              <h3 className="text-gray-700">Minimal Black Top</h3>
-              <p className="text-green-600">$55</p>
-            </div>
-            <div className="bg-white p-4 shadow-md">
-              <img
-                alt="Blue Nautical Top"
-                className="w-full mb-2"
-                height="300"
-                src="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
-                width="300"
-              />
-              <h3 className="text-gray-700">Blue Nautical Top</h3>
-              <p className="text-green-600">$55</p>
-            </div>
-            <div className="bg-white p-4 shadow-md">
-              <img
-                alt="Navy Blue Checked Top"
-                className="w-full mb-2"
-                height="300"
-                src="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
-                width="300"
-              />
-              <h3 className="text-gray-700">Navy Blue Checked Top</h3>
-              <p className="text-green-600">$55</p>
-            </div>
+            <Card
+              image="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
+              title="Card Title"
+              subtitle="ini subtitle"
+              description="..."
+              button={<Button text={"Detail"} color="primary" fullWidth />}
+            />
+            <Card
+              image="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
+              title="Card Title"
+              subtitle="ini subtitle"
+              description="..."
+              button={<Button text={"Detail"} color="primary" fullWidth />}
+            />
+            <Card
+              image="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
+              title="Card Title"
+              subtitle="ini subtitle"
+              description="..."
+              button={<Button text={"Detail"} color="primary" fullWidth />}
+            />
+            <Card
+              image="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
+              title="Card Title"
+              subtitle="ini subtitle"
+              description="..."
+              button={<Button text={"Detail"} color="primary" fullWidth />}
+            />
           </div>
         </div>
       </main>
