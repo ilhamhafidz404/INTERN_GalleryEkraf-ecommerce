@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "alope-ui/Card";
 import { Button } from "alope-ui/Button";
+import { FaWhatsapp, FaInstagram, FaShoppingBag } from "react-icons/fa";
+import { SiShopee } from "react-icons/si";
 
 export default function DetailProduct() {
   return (
@@ -70,18 +72,57 @@ export default function DetailProduct() {
               <span className="ml-2"> $40 </span>
             </div>
             <div className="mb-4">
-              <span className="text-sm text-gray-500"> SELECT SIZE </span>
+              <span className="text-sm text-gray-500">PESAN PRODUK</span>
               <div className="flex space-x-2 mt-2">
-                <Button text="S" color="primary" gradient />
-                <Button text="M" color="primary" gradient />
-                <Button text="L" color="primary" gradient />
-                <Button text="XL" color="primary" gradient />
-                <Button text="XXL" color="primary" gradient />
+                <a
+                  href="https://wa.me/YOUR_NUMBER"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    color="primary"
+                    gradient
+                    iconLeft={<FaWhatsapp />}
+                    text={""}
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/YOUR_INSTAGRAM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    color="primary"
+                    gradient
+                    iconLeft={<FaInstagram />}
+                    text={""}
+                  />
+                </a>
+                <a
+                  href="https://www.tokopedia.com/YOUR_TOKOPEDIA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    color="primary"
+                    gradient
+                    iconLeft={<FaShoppingBag />}
+                    text={""}
+                  />
+                </a>
+                <a
+                  href="https://shopee.co.id/YOUR_SHOPEE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    color="primary"
+                    gradient
+                    iconLeft={<SiShopee />}
+                    text={""}
+                  />
+                </a>
               </div>
-            </div>
-            <div className="flex space-x-4 mb-4">
-              <Button text="Wishlist" color="secondary" />
-              <Button text="Beli Produk" color="success" />
             </div>
             <div className="mb-4">
               <h3 className="text-sm text-gray-500 uppercase mb-2">
