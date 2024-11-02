@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "alope-ui/Card";
 import { Button } from "alope-ui/Button";
 import { FaWhatsapp, FaInstagram, FaShoppingBag } from "react-icons/fa";
@@ -7,6 +6,9 @@ import { SiShopee } from "react-icons/si";
 export default function DetailProduct() {
   return (
     <>
+      <br />
+      <br />
+      <br />
       <main className="container mx-auto px-4 py-8 ">
         <nav className="text-sm text-gray-600 mb-4">
           <a className="hover:underline" href="#">
