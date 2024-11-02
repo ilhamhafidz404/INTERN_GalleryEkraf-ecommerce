@@ -5,7 +5,7 @@ import { Button } from "alope-ui/Button";
 export default function DetailProduct() {
   return (
     <>
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 ">
         <nav className="text-sm text-gray-600 mb-4">
           <a className="hover:underline" href="#">
             {" "}
@@ -27,7 +27,7 @@ export default function DetailProduct() {
               src="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
               width="600"
             />
-            <div className="flex space-x-2 md:px-10 px-3">
+            <div className="flex space-x-2 md:px-10 px-3 mt-4">
               <img
                 alt="Product thumbnail 1"
                 className="w-20 h-20"
@@ -107,10 +107,10 @@ export default function DetailProduct() {
           </div>
         </div>
         <div className="mt-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 ml-5">
             Produk Serupa
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
             <Card
               image="https://storage.googleapis.com/a1aa/image/ipCvEUfdPgUmcixLrfnUa8ljTOXnMh9dI0MmWosu8Qe4FFUnA.jpg"
               title="Card Title"
