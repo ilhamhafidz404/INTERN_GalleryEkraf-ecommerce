@@ -45,7 +45,7 @@ export default function DetailUmkm() {
                 <p className="mt-2">Special Offer</p>
                 <a
                   href="#"
-                  className="bg-indigo-600 text-white py-2 px-4 mt-4 inline-block hover:bg-indigo-900"
+                  className="bg-indigo-600 text-white py-2 px-4 mt-4 inline-block hover:bg-indigo-700"
                 >
                   Shop Now
                 </a>
@@ -66,7 +66,7 @@ export default function DetailUmkm() {
                 <p className="mt-2">Special Offer</p>
                 <a
                   href="#"
-                  className="bg-indigo-600 text-white py-2 px-4 mt-4 inline-block hover:bg-indigo-900"
+                  className="bg-indigo-600 text-white py-2 px-4 mt-4 inline-block hover:bg-indigo-700"
                 >
                   Shop Now
                 </a>
@@ -78,7 +78,7 @@ export default function DetailUmkm() {
 
       <section className="bg-white py-8">
         <div className="flex flex-wrap justify-center gap-4">
-          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2">
+          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2 hover:bg-gray-200 hover:shadow-lg transition duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -95,7 +95,7 @@ export default function DetailUmkm() {
             </svg>
             <h4 className="font-semibold">Quality Product</h4>
           </div>
-          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2">
+          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2 hover:bg-gray-200 hover:shadow-lg transition duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -112,7 +112,7 @@ export default function DetailUmkm() {
             </svg>
             <h4 className="font-semibold">Free Shipping</h4>
           </div>
-          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2">
+          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2 hover:bg-gray-200 hover:shadow-lg transition duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -130,7 +130,7 @@ export default function DetailUmkm() {
 
             <h4 className="font-semibold">14-Day Return</h4>
           </div>
-          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2">
+          <div className="bg-gray-100 p-6 rounded shadow flex items-center space-x-2 hover:bg-gray-200 hover:shadow-lg transition duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
