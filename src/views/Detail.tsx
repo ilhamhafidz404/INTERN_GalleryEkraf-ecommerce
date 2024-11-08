@@ -69,10 +69,6 @@ export default function DetailProduct() {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">
               Light Gray Top for Women
             </h1>
-            <div className="text-xl text-gray-900 mb-4">
-              <span className="line-through text-gray-500"> $50.00 </span>
-              <span className="ml-2"> $40 </span>
-            </div>
             <div className="mb-4">
               <span className="text-sm text-gray-500">PESAN PRODUK</span>
               <div className="flex space-x-2 mt-2">
