@@ -1,17 +1,20 @@
 import React from "react";
-
-import Slider from "react-slick";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { Route, Routes } from "react-router-dom";
+
+// components
 import Header from "alope-ui/Header";
 import Card from "alope-ui/Card";
 import Select from "alope-ui/Select";
 import { Button } from "alope-ui/Button";
 import { CustomModal } from "alope-ui/Modal";
 
+// data
 import products from "./../data/products.json";
 import subsectors from "./../data/subsectors.json";
+
+// sections
+import HomeUMKM from "../sections/HomeUMKM";
 
 export default function Home() {
   const [showCustomModal, setShowCustomModal] = useState(false);
@@ -53,41 +56,6 @@ export default function Home() {
 
   const [totalSubsectorRendered, setTotalSubsectorRendered] = useState(8);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   return (
     <>
       <Header
@@ -255,110 +223,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-32">
-          <div className="md:px-10 px-3">
-            <h2 className="text-3xl font-semibold">Pelaku Usaha</h2>
-            <p className="text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              tempora explicabo cupiditate rem animi solut
-            </p>
-          </div>
-          <div className="md:px-10 px-3 py-10 mt-10">
-            <Slider {...settings}>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-              <div className="px-3">
-                <Card
-                  image={
-                    "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  }
-                  title={"Ilham Store"}
-                  subtitle={"Kriya"}
-                  description={
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,laboriosam."
-                  }
-                  forceSameHeight
-                />
-              </div>
-            </Slider>
-          </div>
-        </section>
+        <HomeUMKM />
 
         <div className="container mx-auto py-16">
           <div className="text-center mb-12">
