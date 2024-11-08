@@ -159,7 +159,7 @@ export default function DetailUmkm() {
                 className="w-full h-52 object-cover transition-transform duration-300 transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                <button className="bg-white py-2 px-4 font-bold rounded transition hover:bg-gray-200">
+                <button className="bg-indigo-600 py-2 px-4 font-bold text-white rounded transition hover:bg-indigo-700">
                   View details →
                 </button>
               </div>
@@ -168,9 +168,7 @@ export default function DetailUmkm() {
               <p className="text-lg font-bold mb-1">Josu Gembira</p>
               <p className="text-gray-500 text-sm">Babeh</p>
             </div>
-            <div className="flex justify-between px-4 pb-4 text-gray-500">
-              <span>❤️ 917</span>
-            </div>
+            <div className="flex justify-between px-4 pb-4 text-gray-500"></div>
           </div>
 
           <div className="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
@@ -180,7 +178,7 @@ export default function DetailUmkm() {
                 className="w-full h-52 object-cover transition-transform duration-300 transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                <button className="bg-white py-2 px-4 font-bold rounded transition hover:bg-gray-200">
+                <button className="bg-indigo-600 py-2 px-4 font-bold text-white rounded transition hover:bg-indigo-700">
                   View details →
                 </button>
               </div>
@@ -189,9 +187,7 @@ export default function DetailUmkm() {
               <p className="text-lg font-bold mb-1">I'm Back care</p>
               <p className="text-gray-500 text-sm">Pa Yadi</p>
             </div>
-            <div className="flex justify-between px-4 pb-4 text-gray-500">
-              <span>❤️ 451</span>
-            </div>
+            <div className="flex justify-between px-4 pb-4 text-gray-500"></div>
           </div>
 
           <div className="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
@@ -201,7 +197,7 @@ export default function DetailUmkm() {
                 className="w-full h-52 object-cover transition-transform duration-300 transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                <button className="bg-white py-2 px-4 font-bold rounded transition hover:bg-gray-200">
+                <button className="bg-indigo-600 py-2 px-4 font-bold text-white rounded transition hover:bg-indigo-700">
                   View details →
                 </button>
               </div>
@@ -210,9 +206,7 @@ export default function DetailUmkm() {
               <p className="text-lg font-bold mb-1">Spruce Rapid</p>
               <p className="text-gray-500 text-sm">Spruce</p>
             </div>
-            <div className="flex justify-between px-4 pb-4 text-gray-500">
-              <span>❤️ 288</span>
-            </div>
+            <div className="flex justify-between px-4 pb-4 text-gray-500"></div>
           </div>
         </div>
       </section>
