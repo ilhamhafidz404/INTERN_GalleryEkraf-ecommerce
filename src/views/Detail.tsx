@@ -69,6 +69,10 @@ export default function DetailProduct() {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">
               Light Gray Top for Women
             </h1>
+            <h2 className="text-sm text-gray-500 uppercase mb-2">Harga</h2>
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">
+              Rp. 60.000
+            </h1>
             <div className="mb-4">
               <span className="text-sm text-gray-500">PESAN PRODUK</span>
               <div className="flex space-x-2 mt-2">
@@ -124,7 +128,7 @@ export default function DetailProduct() {
             </div>
             <div className="mb-4">
               <h3 className="text-sm text-gray-500 uppercase mb-2">
-                Product Details
+                Deskripsi
               </h3>
               <p className="text-gray-700">
                 Light Gray solid Top, has a boat neck, 3/4 sleeves
@@ -132,13 +136,8 @@ export default function DetailProduct() {
             </div>
             <div className="mb-4">
               <h3 className="text-sm text-gray-500 uppercase mb-2">
-                Material &amp; Care
+                Dibuat oleh{" "}
               </h3>
-              <p className="text-gray-700">Cotton</p>
-              <p className="text-gray-700">Machine-wash</p>
-            </div>
-            <div className="mb-4">
-              <h3 className="text-sm text-gray-500 uppercase mb-2">Sold By</h3>
               <p className="text-teal-600">Wind Store, Stillwater</p>
               <p className="text-gray-700">Product Code: 12345678</p>
               <p className="text-gray-700">12 Months Manufacturer Warranty</p>
