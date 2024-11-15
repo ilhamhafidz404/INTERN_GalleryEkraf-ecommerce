@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -17,6 +17,10 @@ import subsectors from "./../data/subsectors.json";
 import HomeUMKM from "../sections/HomeUMKM";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [showCustomModal, setShowCustomModal] = useState(false);
 
   const handleSubmitFilter = (e: React.FormEvent<HTMLFormElement>) => {
@@ -82,7 +86,7 @@ export default function Home() {
       />
 
       <main className="my-20">
-        <section>
+        {/* <section>
           <div className="md:px-10 px-3">
             <h2 className="text-3xl font-semibold">17 Subsektor</h2>
             <p className="text-gray-700">
@@ -131,7 +135,7 @@ export default function Home() {
               )}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="md:px-10 px-3 mb-10">
           <div className="flex md:flex-row flex-col md:items-center items-start justify-between mt-20 mb-10">
@@ -225,7 +229,7 @@ export default function Home() {
 
         <HomeUMKM />
 
-        <div className="container mx-auto py-16">
+        {/* <div className="container mx-auto py-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Statistics</h2>
           </div>
@@ -302,7 +306,7 @@ export default function Home() {
               fullWidth
             />
           </div>
-        </div>
+        </div> */}
       </main>
 
       <CustomModal
